@@ -3,89 +3,314 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Capstone-Jayapura i17</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="main-container">
-        <div class="nav">
-          <nav>
-            <ul>
-                <li><img src="\Alat\Logo.png" alt="logo sikilat"></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about us">About Us</a></li>
-                <li><a href="#our service">Our Service</a></li>
-                <li><a href="#our partner">Our Partner</a></li>
-            </ul>
-          </nav>
-          <!-- Burger -->
-          <div class="burger">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
-          </div>
-        </div>
-
-        <section id="hero">
-          <div class="hero-left">
-            <h3 class="pre-title">Sikilat Ekspress</h3>
-            <h1 class="hero-name">Sikilat <span>Ekspress</span></h1>
-            <p>
-              Creative front-end developer with more than +5 years of experience
-              in enterprise companies and startups. Proficient in Javascript and
-              React. Passionate about UI/UX.
-            </p>
-          </div>
-
-          <div class="hero-right">
-            <img src="./images/hero.svg" alt="Person Standing" />
-          </div>
-        </section>
-      </div>
-    </header>
-    <!-- End Header -->
-
     <!-- Home -->
-    <section id="home">
-        <div class="home main-container">
-            <h3 class="pre-title">Home</h3>
-        </div>
-    </section>
+    <nav>
+      <div class="navbar_brand">
+        <a href="#"><img src="./assets/Logoputih.png" class="navbar_images" /></a>
+      </div>
+      <div class="navbar_toggle">
+        <img src="./assets/hamburger.png" alt="hamburger" />
+      </div>
+      <div class="navbar_menu_mobile">
+        <a href="index.html">Home</a>
+        <a href="#about us">About Us</a>
+        <a href="#our service">Our Service</a>
+        <a href="#partner">Our Partner</a>
+      </div>
+    </nav>
+
+    <div class="hero_section">
+      <img src="./assets/FIGMA.png" class="hero_images" />
+      <div class="hero_card">
+        <h1>Sikilat Express</h1>
+        <p>
+          Awal berdiri perusahaan ini sejak tahun 2021. Perusahaan yang
+          merupakan karya anak bangsa ini kini tersebar ke seluruh pelosok
+          Indonesia.
+        </p>
+      </div>
+    </div>
     <!-- End Home -->
 
     <!-- About Us -->
-    <section id="about us">
-        <div class="About Us main-container">
-            <h3 class="pre-title">About Us</h3>
+    <section id="about us" class="about us main-container">
+      <div class="about-container">
+        <div class="pre-title">
+          <h3>About Us</h3>
         </div>
+        <div class="about-collapse">
+          <div id="rectangle" class="about-content">
+            <h3>VISION</h3>
+            <p>
+              Menjadi perusahaan jasa pengiriman terkemuka di Indonesia dengan
+              memberikan layanan yang cepat, aman, dan terpercaya.
+            </p>
+          </div>
+
+          <div id="rectangle" class="about-content">
+            <h3>MISSION</h3>
+            <p>
+              Memberikan solusi pengiriman yang efektif dan efisien untuk
+              memenuhi kebutuhan pelanggan dengan mengutamakan keamanan dan
+              kecepatan pengiriman.
+            </p>
+          </div>
+
+          <div id="rectangle" class="about-content">
+            <h3>VALUE</h3>
+            <ul>
+              <li>Keamanan</li>
+              <li>Kecepatan</li>
+              <li>Kepuasan Pelanggan</li>
+              <li>Keterbukaan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-container">
+        <input type="radio" name="images" id="i1" checked />
+        <input type="radio" name="images" id="i2" />
+        <input type="radio" name="images" id="i3" />
+
+        <div class="slide-img" id="one">
+          <img src="assets/1.png" />
+          <label for="i3" class="pre"></label>
+          <label for="i2" class="nxt"></label>
+        </div>
+
+        <div class="slide-img" id="two">
+          <img src="assets/2.png" />
+          <label for="i1" class="pre"></label>
+          <label for="i3" class="nxt"></label>
+        </div>
+
+        <div class="slide-img" id="three">
+          <img src="assets/cth ekpedisi.jpg" />
+          <label for="i2" class="pre"></label>
+          <label for="i1" class="nxt"></label>
+        </div>
+
+        <div class="navb">
+          <label class="dots" id="dot1" for="i1"></label>
+          <label class="dots" id="dot2" for="i2"></label>
+          <label class="dots" id="dot3" for="i3"></label>
+        </div>
+      </div>
     </section>
     <!-- End About Us -->
 
+    <!-- Kenapa Harus Si Kilat  -->
+    <div class="conteiner-sikilat">
+      <div class="judul-sikilat">
+        <h3>Kenapa Harus Sikilat</h3>
+      </div>
+      <div class="sikilat-img-container">
+        <div class="sikilat-img">
+          <img src="assets/truk.png" alt="Gambar Truk" />
+        </div>
+        <div class="sikilat-img">
+          <img src="assets/24_jam.png" alt="" />
+        </div>
+        <div class="sikilat-img1">
+          <img src="assets/peta.png" alt="" />
+        </div>
+        <div class="sikilat-img">
+          <img src="assets/picup paket.png" alt="" />
+        </div>
+        <div class="sikilat-img">
+          <img src="assets/kurir.png" alt="" />
+        </div>
+      </div>
+      <div class="sikilat-text-container">
+        <div class="sikilat-text"><p>Lebih Cepat hanya 1-3 Hari</p></div>
+        <div class="sikilat-text">
+          <p>Pelayanan 24 Jam Keluhan Pelanggan</p>
+        </div>
+        <div class="sikilat-text">
+          <p>Pengiriman Menjangkau Seluruh Indonesia</p>
+        </div>
+        <div class="sikilat-text"><p>Kirim Paket Hanya dari Rumah</p></div>
+        <div class="sikilat-text"><p>Kirim Cepat Paket dalam 15 Jam</p></div>
+      </div>
+    </div>
+    <!-- End Kenapa Harus Si Kilat -->
+
     <!-- Our Service -->
     <section id="our service">
-        <div class="Our Service main-container">
-            <h3 class="pre-title">Our Service</h3>
+      <div class="Our-Service-main-container">
+        <h3 class="pre-title">Our Service</h3>
+        <div class="service-container">
+          <div class="service-box">
+            <h5>FAST</h5>
+            <img class="service-img1" src="assets/24_jam.png" alt="Gambar 1" />
+            <p>Estimasi: 2-7 days</p>
+            <img class="service-img2" src="assets/peta.png" alt="Gambar 2" />
+            <p>Coverage: All Indonesia</p>
+            <img class="service-img3" src="assets/kurir.png" alt="Gambar 3" />
+            <p>Delivery time depends on the destination area</p>
+          </div>
+          <div class="service-box">
+            <h5>EXPRESS</h5>
+            <img class="service-img1" src="assets/24_jam.png" alt="Gambar 1" />
+            <p>Estimasi: 7-10 days</p>
+            <img class="service-img2" src="assets/peta.png" alt="Gambar 2" />
+            <p>Coverage: All Indonesia</p>
+            <img class="service-img3" src="assets/kurir.png" alt="Gambar 3" />
+            <p>Delivery time depends on the destination area</p>
+          </div>
+          <div class="service-box">
+            <h5>KILAT</h5>
+            <img class="service-img1" src="assets/24_jam.png" alt="Gambar 1" />
+            <p>Estimasi: 1-2 days</p>
+            <img class="service-img2" src="assets/peta.png" alt="Gambar 2" />
+            <p>Coverage: Jawa, Bali, dan Sumatera</p>
+            <img class="service-img3" src="assets/kurir.png" alt="Gambar 3" />
+            <p>Delivery time depends on the destination area</p>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- End Our Service  -->
+    <!--End Our Servie-->
 
     <!-- Our Partner -->
-    <section id="our partner">
-        <div class="Our Partner main-container">
-            <h3 class="pre-title">Our Partner</h3>
+    <section id="partner">
+      <div class="partnermain-container">
+        <h1 class="pre-title">Our Partner</h1>
+        <div class="grid-5">
+          <!-- Our Partner 1 -->
+          <div class="partner">
+            <div class="partner-cover">
+              <img src="assets/shopee.png" alt="partner 1" />
+            </div>
+          </div>
+          <!-- Portfolio 2 -->
+          <div class="partner">
+            <div class="partner-cover">
+              <img src="assets/tokopedia.png" alt="partner 2" />
+            </div>
+          </div>
+
+          <!-- Portfolio 3 -->
+          <div class="partner">
+            <div class="partner-cover">
+              <img src="assets/sociolla.png" alt="partner 3" />
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="partner">
+            <div class="partner-cover">
+              <img src="assets/zalora.png" alt="partner 4" />
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="partner">
+            <div class="partner-cover">
+              <img src="assets/lazada.png" alt="partner 5" />
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="partner">
+            <div class="partner-cover">
+              <img src="assets/blibli.png" alt="partner 6" />
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="partner">
+            <div class="partner-cover">
+              <img src="assets/amazon.png" alt="partner 7" />
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="partner">
+            <div class="partner-cover">
+              <img src="assets/bukalapak.png" alt="partner 8" />
+            </div>
+          </div>
         </div>
-      
+      </div>
     </section>
     <!-- End Our Partner -->
 
-    <!-- Fomter -->
-    <footer>
-      
-    </footer>
-    <!-- End Footer -->
+    <!-- Question -->
+    <section id="question">
+      <div class="question main-container">
+        <form id="text-question" action="" method="post">
+          <h2 id="text-h2">Masih Bingung? Yuk ditanya,,</h2>
+          <input type="text" placeholder="Masukan Nama" /><br />
+          <input type="text" placeholder="Masukan Almat email" /><br />
+          <textarea rows="5" placeholder="Pertanyaan"></textarea><br />
+          <button style="color: white">Kirim Pertanyaan</button>
+        </form>
 
-    <script src="js/js.js"></script>
+        <div class="box">
+          <div class="box1">
+            <h4>Ada Warna Putih kah Bang?</h4>
+            <p>
+              Tak deu bang, dulu warna putih bang tak ganas, sekarang dah tukar
+              warna hitam bang mantap
+            </p>
+          </div>
+          <div class="box1">
+            <h4>Bisa COD bang??</h4>
+            <p>
+              Bisa dooonggggg, asal bayar yak awas aja klo enggak!
+            </p>
+          </div>
+          <div class="box1">
+            <h4>Kak mata kakinya sehari berapa kali kedip?</h4>
+            <p>
+              Tak deu bang, dulu warna putih bang tak ganas, sekarang dah tukar
+              warna hitam bang mantap
+            </p>
+          </div>
+          <div class="box1">
+            <h4>Ada Warna Putih kah Bang?</h4>
+            <p>
+              Tak deu bang, dulu warna putih bang tak ganas, sekarang dah tukar
+              warna hitam bang mantap
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Question -->
+    <!-- Fonter -->
+    <div class="footer">
+      <h3>Stay Conected with us</h3>
+      <div class="footer-society">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footer-content">
+        <h5>
+          Menara Rajawali, Jl. DR. Ide Anak Agung Gde Agung, RT.5/RW.2,
+          Kuningan, Kuningan Tim., Kecamatan Setiabudi, Jakarta
+        </h5>
+        <h5>(+6289 8769 7865)</h5>
+        <a href="#">customercare@sikilat.com</a>
+
+      </div>
+    </div>
+    <!-- END OF FOOTER -->
+    <script src="js/sc.js"></script>
   </body>
 </html>
