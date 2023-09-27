@@ -382,13 +382,13 @@ nav {
 }
 
 /* Layouts */
-.grid-5 {
+.grid-4 {
   display: grid;
 /* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 gap: 3rem;
   padding-top: 30px ;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   }
 
 .section-title{
@@ -400,7 +400,7 @@ gap: 3rem;
   background-color: orange;
   color: white;
   margin: 40px auto 0px;
-  border-radius: 15px;
+  border-radius: 50px;
 }
 
 #partner {
@@ -417,12 +417,12 @@ gap: 3rem;
 
 
 .partner-cover {
-  height: 100px;
+  height: 135px;
 }
 
 .partner img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   object-fit: cover;
 }
 
