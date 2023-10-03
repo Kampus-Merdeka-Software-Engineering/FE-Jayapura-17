@@ -33,6 +33,7 @@ nav {
   right: 0;
   z-index: 999;
 }
+
 .navbar_toggle {
   display: none;
 }
@@ -49,6 +50,7 @@ nav {
   color: #ffffff88;
   text-decoration: none;
 }
+
 .navbar_menu_mobile a:hover {
   color: #ffffff;
 }
@@ -257,42 +259,24 @@ nav {
 }
 
 .sikilat-img-container{
-  display: flex; /* Mengaktifkan Flexbox */
-  flex-direction: row; /* Tata letak horizontal */
+  display: flex; 
+  flex-direction: row;
   justify-content: space-around;
   padding-top: 30px;
+  flex-wrap: wrap;
+  
 }
 
 .sikilat-img{
-  margin: 5px; /* Ruang antara item */
-  padding: 5px; /* Padding untuk item */
-  text-align: center; /* Teks di tengah */
+  padding: 5px;
+  text-align: center;
+  width: 20%;
 }
 
 .sikilat-img img{
   width: 150px;
-  height: 100;
-  margin: 5px; /* Ruang antara item */
-  padding: 5px; /* Padding untuk item */
-}
-
-.sikilat-img1 img{
-  width: 300px;
-  height: auto;
-  padding-top: 15px;
-}
-
-.sikilat-text-container {
-  display: flex; /* Mengaktifkan Flexbox */
-  flex-direction: row; /* Tata letak horizontal */
-  justify-content: space-around;
-}
-
-.sikilat-text{
-  margin: 5px; /* Ruang antara item */
-  padding: 5px; /* Padding untuk item */
-  text-align: center; /* Teks di tengah */
-  margin-bottom: 10px;
+  margin: 5px; 
+  padding: 5px;
 }
 
 /* Our Service */
@@ -306,6 +290,7 @@ nav {
   justify-content: space-around;
   padding-top: 40px;
   padding-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .service-box {
@@ -328,7 +313,7 @@ nav {
 }
 
 .service-img2 {
-  width: 250px;
+  width: 200px;
   height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -384,9 +369,8 @@ nav {
 /* Layouts */
 .grid-4 {
   display: grid;
-/* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
-grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 3rem;
   padding-top: 30px ;
   padding-bottom: 60px;
   }
@@ -555,57 +539,6 @@ button {
 
 
 /* RESPONSIVE */
-@media screen and (max-width: 768px) {
-  .about-content {
-    width: 45%;
-  }
-  .about-collapse {
-    justify-content: center;
-    gap: 20px;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .about-content {
-    width: 100%;
-  }
-  .about-collapse {
-    justify-content: center;
-    gap: 20px;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .navbar_images {
-    width: 100px;
-  }
-  .navbar_menu_mobile {
-    padding: 20px;
-  }
-  .navbar_menu_mobile a {
-    font-weight: semi-bold;
-    font-size: 12px;
-    text-decoration: none;
-  }
-  .navbar_menu_mobile a:hover {
-    color: #ffffff;
-  }
-  .hero_card {
-    top: 100px;
-    right: 20px;
-    padding: 20px 12px;
-    border-radius: 12px;
-    gap: 12px;
-    width: 250px;
-  }
-  .hero_card h1 {
-    font-size: 18px;
-  }
-  .hero_card p {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .navbar_toggle {
@@ -657,4 +590,91 @@ button {
     font-size: 16px;
     line-height: 20px;
   }
+  .about-content {
+    width: 45%;
+  }
+  .about-collapse {
+    justify-content: center;
+    gap: 20px;
+  }
+  .sikilat-img{
+    width: 33%;
+  }
+  .service-box{
+    width: 45%;
+  }
+  .service-container {
+  gap: 20px;
+  }
+
+}
+
+  @media screen and (max-width: 426px) {
+  .navbar_toggle {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar_toggle img {
+    width: 30px;
+  }
+  .navbar_menu_mobile {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 46px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 20px;
+    background-color: black;
+  }
+  .navbar_menu_mobile.open {
+    display: flex;
+  }
+  .navbar_menu_mobile a {
+    font-weight: bold;
+    color: #ffffff88;
+    text-decoration: none;
+  }
+  .navbar_images {
+    width: 140px;
+  }
+  nav {
+    padding: 0px 20px;
+  }
+  .hero_card {
+    top: 140px;
+    right: 20px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    gap: 12px;
+    width: 400px;
+  }
+  .hero_card h1 {
+    font-size: 32px;
+  }
+  .hero_card p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .about-collapse {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .sikilat-img{
+    width: 100%;
+  }
+  .service-box{
+    width: 90%;
+  }
+  .service-container {
+  gap: 20px;
+  }
+
 }

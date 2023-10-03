@@ -119,30 +119,24 @@
       <div class="sikilat-img-container">
         <div class="sikilat-img">
           <img src="assets/truk.png" alt="Gambar Truk" />
+          <p>Lebih Cepat hanya 1-3 Hari</p>
         </div>
         <div class="sikilat-img">
           <img src="assets/24_jam.png" alt="" />
+          <p>Pelayanan 24 Jam Keluhan Pelanggan</p>
         </div>
-        <div class="sikilat-img1">
-          <img src="assets/peta.png" alt="" />
+        <div class="sikilat-img" id="peta">
+          <img src="assets/peta1.png" alt="" />
+          <p>Pengiriman Menjangkau Seluruh Indonesia</p>
         </div>
         <div class="sikilat-img">
           <img src="assets/picup paket.png" alt="" />
+          <p>Kirim Paket Hanya dari Rumah</p>
         </div>
         <div class="sikilat-img">
           <img src="assets/kurir.png" alt="" />
+          <p>Kirim Cepat Paket dalam 15 Jam</p>
         </div>
-      </div>
-      <div class="sikilat-text-container">
-        <div class="sikilat-text"><p>Lebih Cepat hanya 1-3 Hari</p></div>
-        <div class="sikilat-text">
-          <p>Pelayanan 24 Jam Keluhan Pelanggan</p>
-        </div>
-        <div class="sikilat-text">
-          <p>Pengiriman Menjangkau Seluruh Indonesia</p>
-        </div>
-        <div class="sikilat-text"><p>Kirim Paket Hanya dari Rumah</p></div>
-        <div class="sikilat-text"><p>Kirim Cepat Paket dalam 15 Jam</p></div>
       </div>
     </div>
     <!-- End Kenapa Harus Si Kilat -->
@@ -182,7 +176,7 @@
         </div>
       </div>
     </section>
-    <!--End Our Servie-->
+    <!--End Our Servie -->
 
     <!-- Our Partner -->
     <section id="partner">
@@ -252,14 +246,13 @@
     <!-- Question -->
     <section id="question">
       <div class="question main-container">
-        <form id="text-question" action="" method="post">
+        <div>
           <h2 id="text-h2">Masih Bingung? Yuk ditanya,,</h2>
-          <input type="text" placeholder="Masukan Nama" /><br />
-          <input type="text" placeholder="Masukan Almat email" /><br />
-          <textarea rows="5" placeholder="Pertanyaan"></textarea><br />
-          <button style="color: white">Kirim Pertanyaan</button>
-        </form>
-
+          <input id="nama" type="text" placeholder="Masukan Nama" /><br />
+          <input id="email" type="email" placeholder="Masukan Almat email" /><br />
+          <textarea id="pertanyaan" rows="5" placeholder="Pertanyaan"></textarea><br />
+          <button style="color: white" onclick="KirimPertanyaan(event)">Kirim Pertanyaan</button>
+        </div>
         <div class="box">
           <div class="box1">
             <h4>Ada Warna Putih kah Bang?</h4>
