@@ -97,6 +97,18 @@ nav {
   line-height: 30px;
 }
 
+.ourteam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 40px;
+  background-color: #FB8122;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+}
+
 
 
 .pre-title {
@@ -676,5 +688,159 @@ button {
   .service-container {
   gap: 20px;
   }
-
 }
+
+
+
+/* STYLE UNTUK OUR TEAM */
+/* STYLE UNTUK OUR TEAM */
+/* STYLE UNTUK OUR TEAM */
+
+.container-member {
+  background-color: #c7bbb2;
+  min-height: 180vh;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 50px;
+}
+
+.grid img {
+  padding-left: 12px;
+  padding-top: 9px;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.grid > article {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+  width: 280px;
+  height: 410px;
+  transition: 0.2s transform;
+  cursor: pointer;
+  line-height: 100px;
+}
+
+.grid > article img {
+  padding-left: 12px;
+  padding-top: 15px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.grid > article:hover {
+  transform: scale(1.1);
+  background: linear-gradient(#ff8b32,#ffa25a,#fcb680,#ffd5b5,#ffffff);
+}
+
+.grid p {
+  color: #000;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.grid h2 {
+  color: #000;
+  font-size: 25px;
+  line-height: 30px;
+}
+.grid button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #393a3a;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 15px;
+}
+
+.grid button:hover {
+  background: linear-gradient(#ff7810,#fb8122);
+}
+
+/* For small desktop responsive */
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .grid > article {
+    width: 100%;
+  }
+  
+  .grid > article img {
+    padding-top: 15px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .grid h2 {
+    font-size: 20px;
+  }
+  
+  .grid p {
+    font-size: 12px;
+  }
+  
+  .grid button {
+    width: 80%;
+  }
+}
+
+/* For smartphone responsive */
+@media (max-width: 480px) { 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .grid > article {
+    width: 100%;
+  }
+  
+  .grid > article img {
+    padding-top: 15px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .grid h2 {
+    font-size: 20px;
+  }
+  
+  .grid p {
+    font-size: 12px;
+  }
+  
+  .grid button {
+    width: 80%;
+  }
+}
+
+
+
+
