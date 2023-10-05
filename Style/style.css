@@ -10,6 +10,7 @@
   line-height: 20px;
   font-size: 15px;
 }
+
 html {
   margin: 0;
   padding: 0;
@@ -20,6 +21,36 @@ body {
   padding: 0;
   background-color: #ffffff;
 }
+
+/* padding elemen */
+
+#partner {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+#aboutus {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+#why {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+#ourservice {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+/* NAVIGASI */
 nav {
   display: flex;
   justify-content: space-between;
@@ -115,13 +146,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 40px;
+  width: 350px;
+  height: 80px;
   background-color: #FB8122;
   color: white;
   margin: 40px auto 0px;
   border-radius: 15px;
-  font-size: x-large;
+  font-size: 30px;
 }
 
 .about-container {
@@ -253,12 +284,13 @@ nav {
 
 /* Kenapa Harus Sikilat */
 .conteiner-sikilat{
-  background-color: white;
+  background-color: #efefef;
   height: auto;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
-.judul-sikilat{
+/* .judul-sikilat{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,7 +300,7 @@ nav {
   color: white;
   margin: 40px auto 0px;
   border-radius: 15px;
-}
+} */
 
 .sikilat-img-container{
   display: flex; 
@@ -293,8 +325,9 @@ nav {
 
 /* Our Service */
 .Our-Service-main-container{
-  background-color: white;
+  background-color: #efefef;
   height: auto;
+  padding-top: 5px;
 }
 
 .service-container {
@@ -343,8 +376,9 @@ nav {
   background-color: #FB8122;
   color: white;
   padding: 10px;
+  height: 50px;
   border-radius: 10px;
-  font-size: large;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -356,8 +390,8 @@ nav {
 
 .service-box {
   width: 30%;
-  border: 1px solid #efefef;
-  background-color: #efefef;
+  border: 1px solid white;
+  background-color: white;
   border-radius: 40px;
 }
 
@@ -374,8 +408,9 @@ nav {
 
 /* Our Partner */
 .partnermain-container{
-  background-color: white;
+  background-color: #efefef;
   height: auto;
+  padding-top: 5px;
 }
 
 /* Layouts */
@@ -399,9 +434,7 @@ nav {
   border-radius: 50px;
 }
 
-#partner {
-  padding: var(--sectionPadding);
-}
+
 
 .partner .pre-title {
   margin: 0 auto;
