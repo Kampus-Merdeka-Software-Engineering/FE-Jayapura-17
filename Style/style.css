@@ -777,6 +777,29 @@ img {
   background: linear-gradient(#ff7810,#fb8122);
 }
 
+.header-ourteam{
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 80px;
+  background-color: #FB8122;
+  color: white;
+  margin: 40px auto 0px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.header-ourteam h1:hover{
+  transform: scale(1.1);
+}
+.header-ourteam h1{
+  font-size: 30px;
+}
+
+
+
+
 /* For small desktop responsive */
 @media (max-width: 768px) {
   .grid {
