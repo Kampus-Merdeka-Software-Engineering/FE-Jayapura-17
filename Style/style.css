@@ -313,14 +313,24 @@ nav {
 
 .sikilat-img{
   padding: 5px;
-  text-align: center;
   width: 20%;
+  text-align: center;
+
 }
 
 .sikilat-img img{
-  width: 150px;
-  margin: 5px; 
-  padding: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px 10px;  
+
+}
+
+.tex {
+  font-weight: bold;
+}
+
+.imgkilat {
+  height: 150px;
 }
 
 /* Our Service */
@@ -690,9 +700,9 @@ button {
     padding: 0px 20px;
   }
   .hero_card {
-    top: 140px;
+    top: 100px;
     right: 20px;
-    padding: 40px 20px;
+    padding: 20px 20px;
     border-radius: 12px;
     gap: 12px;
     width: 400px;
@@ -734,6 +744,9 @@ button {
   min-height: 180vh;
 }
 
+.ourteam a {
+  text-decoration: none;
+}
 
 .grid {
   display: flex;
