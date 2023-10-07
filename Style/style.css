@@ -152,7 +152,7 @@ nav {
   color: white;
   margin: 40px auto 0px;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .about-container {
@@ -285,22 +285,10 @@ nav {
 /* Kenapa Harus Sikilat */
 .conteiner-sikilat{
   background-color: #efefef;
-  height: auto;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
-/* .judul-sikilat{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 40px;
-  background-color: #FB8122;
-  color: white;
-  margin: 40px auto 0px;
-  border-radius: 15px;
-} */
 
 .sikilat-img-container{
   display: flex; 
@@ -435,19 +423,6 @@ nav {
   padding-bottom: 60px;
   }
 
-.section-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  background-color: orange;
-  color: white;
-  margin: 40px auto 0px;
-  border-radius: 50px;
-}
-
-
 
 .partner .pre-title {
   margin: 0 auto;
@@ -508,12 +483,10 @@ button {
   width: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid#d9d9d9;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   margin: 0 auto;
   overflow: auto;
   margin-top: 2%;
-  
-
 }
 
 .box1 {
@@ -524,7 +497,7 @@ button {
   width: 95%;
   height: auto;
   margin: 10px 0;
-  margin-left: 15px;
+  margin-left: 10px;
   padding-bottom: 10px;
 }
 
@@ -733,6 +706,11 @@ button {
   }
   .service-container {
   gap: 20px;
+  }
+  .pre-title {
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
