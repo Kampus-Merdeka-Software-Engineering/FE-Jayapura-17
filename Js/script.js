@@ -6,7 +6,7 @@ navbarToggle.addEventListener("click", (e) => {
   e.preventDefault();
   navbarMenuMobile.classList.toggle("open");
 });
-
+// 
 function KirimPertanyaan(event) {
   const inputNama = document.querySelector("#nama");
   const inputEmail = document.querySelector("#email");
