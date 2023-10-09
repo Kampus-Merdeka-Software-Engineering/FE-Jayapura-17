@@ -97,7 +97,7 @@ nav {
 }
 .hero_card {
   position: absolute;
-  top: 180px;
+  top: 100px;
   right: 20px;
   padding: 60px 40px;
   border-radius: 20px;
@@ -419,10 +419,10 @@ nav {
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 3rem;
   padding-top: 30px ;
   padding-bottom: 60px;
   }
+
 
 
 .partner .pre-title {
@@ -431,17 +431,19 @@ nav {
 
 .partner {
   text-align: center;
+
 }
 
 
 .partner-cover {
   height: 135px;
+
 }
 
 .partner img {
   width: 70%;
   height: 70%;
-  object-fit: cover;
+
 }
 
 /* question */
@@ -716,7 +718,6 @@ button:hover{
   }
 
   .hero_card {
-    
     border-radius: 12px;
     gap: 12px;
     width: 90%;
@@ -757,17 +758,29 @@ button:hover{
     font-size: 20px;
     text-align: center;
   }
-  .partner-cover{
-    width: 80%;
-    margin: 0 auto;
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding-top: 15px ;
+    padding-bottom: 30px;
+    }
+  .partner-cover img {
+    width: fit-content;
   }
+  .box1 h4 {
+    font-size: small;
+    padding-bottom: 10px;
+  }
+  .box1 p {
+    font-size: smaller;
+  }
+  .box-question input{
+    color: white;
+  }
+  
 
 
 }
-
-
-
-
 /* STYLE UNTUK TEAM */
 /* STYLE UNTUK TEAM */
 
