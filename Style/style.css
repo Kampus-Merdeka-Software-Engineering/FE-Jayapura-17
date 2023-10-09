@@ -700,10 +700,11 @@ button:hover{
   }
   .about-content {
     width: 100%;
+
   }
   .about-collapse {
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
   .img-container {
     justify-content: center;
@@ -722,6 +723,36 @@ button:hover{
     width: 50%;
     font-size: 20px;
     text-align: center;
+  }
+
+
+}
+@media screen and (max-width: 376px) {
+  .partner-cover{
+    width: 90%;
+  }
+  .about-content ul {
+    margin: 20px;
+    justify-content: center;
+  }
+  .about-container h3{
+    padding: px;
+  }
+  .about-content p {
+  font-size: small;
+  }
+
+  .about-content ul {
+  font-size: small;
+  }
+
+  .hero_card {
+    top: 200px;
+    right: 20px;
+    padding: 20px 20px;
+    border-radius: 12px;
+    gap: 12px;
+    width: 350px;
   }
 }
 
