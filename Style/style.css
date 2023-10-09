@@ -176,25 +176,27 @@ nav {
   flex-wrap: wrap;
 }
 
-#rectangle > h3 {
-  justify-content: center;
-  align-items: center;
+#rectangle > h3  {
   text-align: center;
-  padding-top: 30px;
-}
+  margin-top: 20px;
+  
 
+}
 #rectangle > p {
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  margin: 20px;
+  text-align: justify;
+
 }
 
-#rectangle > ul {
+#rectangle > h5 {
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  padding-left: 45px;
+  
+  text-align: justify;
 }
+
 
 /* Image Slider */
 .img-container {
@@ -628,6 +630,7 @@ button:hover{
   }
   .about-content {
     width: 45%;
+    font-size: small;
   }
   .about-collapse {
     justify-content: center;
@@ -644,6 +647,34 @@ button:hover{
   }
   .img-container {
     justify-content: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .grid > article {
+    width: 100%;
+  }
+  
+  .grid > article img {
+    padding-top: 15px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .grid h2 {
+    font-size: 20px;
+  }
+  
+  .grid p {
+    font-size: 12px;
+  }
+  
+  .grid button {
+    width: 80%;
   }
 
 }
@@ -683,16 +714,15 @@ button:hover{
   nav {
     padding: 0px 20px;
   }
+
   .hero_card {
-    top: 200px;
-    right: 10px;
-    padding: 20px 20px;
+    
     border-radius: 12px;
     gap: 12px;
-    width: 400px;
+    width: 90%;
   }
   .hero_card h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
   .hero_card p {
     font-size: 16px;
@@ -700,7 +730,10 @@ button:hover{
   }
   .about-content {
     width: 100%;
-
+  }
+  .about-content p{
+    font-size: small;
+    line-height: normal;
   }
   .about-collapse {
     justify-content: center;
@@ -708,7 +741,7 @@ button:hover{
   }
   .img-container {
     justify-content: center;
-    }
+  }
 
   .sikilat-img{
     width: 100%;
@@ -724,37 +757,14 @@ button:hover{
     font-size: 20px;
     text-align: center;
   }
-
-
-}
-@media screen and (max-width: 376px) {
   .partner-cover{
-    width: 90%;
-  }
-  .about-content ul {
-    margin: 20px;
-    justify-content: center;
-  }
-  .about-container h3{
-    padding: px;
-  }
-  .about-content p {
-  font-size: small;
+    width: 80%;
+    margin: 0 auto;
   }
 
-  .about-content ul {
-  font-size: small;
-  }
 
-  .hero_card {
-    top: 200px;
-    right: 20px;
-    padding: 20px 20px;
-    border-radius: 12px;
-    gap: 12px;
-    width: 350px;
-  }
 }
+
 
 
 
@@ -871,41 +881,6 @@ img {
 }
 .header-ourteam h1{
   font-size: 30px;
-}
-
-
-
-
-/* For small desktop responsive */
-@media (max-width: 768px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin: 20px;
-  }
-  
-  .grid > article {
-    width: 100%;
-  }
-  
-  .grid > article img {
-    padding-top: 15px;
-    width: 150px;
-    height: 150px;
-  }
-  
-  .grid h2 {
-    font-size: 20px;
-  }
-  
-  .grid p {
-    font-size: 12px;
-  }
-  
-  .grid button {
-    width: 80%;
-  }
 }
 
 /* For smartphone responsive */
