@@ -684,8 +684,8 @@ button:hover{
     padding: 0px 20px;
   }
   .hero_card {
-    top: 100px;
-    right: 20px;
+    top: 200px;
+    right: 10px;
     padding: 20px 20px;
     border-radius: 12px;
     gap: 12px;
