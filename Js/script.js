@@ -19,7 +19,7 @@ function KirimPertanyaan(event) {
   fetch(`${BASE_URL}/komentar`, {
     method: "POST",
     headers: {
-      "Content-Type": "aplication/json",
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       nama: valueNama,
