@@ -206,7 +206,6 @@ nav {
   height: 0;
   padding-bottom: 40%;
   background: #4c4c4c;
-  border: solid 10px #2c2c2c;
 }
 
 .slide-img {
@@ -635,7 +634,10 @@ button {
     width: 45%;
   }
   .service-container {
-  gap: 20px;
+    gap: 20px;
+  }
+  .img-container {
+    justify-content: center;
   }
 
 }
@@ -697,6 +699,9 @@ button {
     justify-content: center;
     gap: 20px;
   }
+  .img-container {
+    justify-content: center;
+    }
 
   .sikilat-img{
     width: 100%;
